@@ -1,0 +1,313 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.green {
+    background-color: greenyellow;
+    color: black;
+}
+
+.centerize {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.storegame {
+    display: flex;
+    column-gap: 15px;
+    margin: 0;
+    padding: 3px;
+    background-color: rgb(27, 44, 23);
+}
+
+.sub {
+    display: inline-block;
+}
+
+.storegame img {
+    max-height: 100px;
+    min-height: 100px;
+}
+
+.storegame-title {
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+}
+
+#topbar {
+    text-align: center;
+    padding: 15px;
+}
+
+#container {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
