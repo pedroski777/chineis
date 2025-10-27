@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Chineis</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div id="topbar" class="green">
+            <img src="img/logo.png" width="90px">
+            <hr>
+
+           |<a href="index.html">Login</a> |
+            <a href="produtos.html">Loja</a> |
+            <a href="contato.html">Suporte</a> |
+            <a href="sobre.html">Sobre</a> |
+        </div>
+
+        <div id="container" style="text-align: center;">
+            <h1>Voce tem uma pergunta? Contate-nos</h1>
+            <h3>Entre em contato comigo pelo WhatsApp preenchendo o  formulario abaixo:</h3>
+      <form id="whatsappForm" class="contato">
+      <input type="text" id="nome" placeholder="Seu nome" required />
+      <input type="email" id="email" placeholder="Seu email"  required /> 
+
+     <textarea id="mensagem" placeholder="Digite sua mensagem" required></textarea>
+     
+      <input class="submit" type="submit"value="Envie Para o Support do Whatsapp">
+        </form>
+
+            <a href="https://www.twitter.com/testingacc33331">Twitter <img width="16px" height="16px" src="img/x.jpg"></a>
+            <a href="https://www.youtube.com/channel/UCqWmLengIKFXRjuL1YyXNSg">YouTube <img width="16px" height="16px" src="img/youtube.png"></a>
+            <a href="https://www.instagram.com/filipe_alcae208/">instagram <img width="16px" height="16px" src="img/instagram.jpg"></a>
+ <script>
+         document.getElementById("whatsappForm").addEventListener("submit", function (e){
+        e.preventDefault();
+        const nome = document.getElementById("nome").value;
+        const email = document.getElementById("email").value;
+        const mensagem = document.getElementById("mensagem").value; 
+  
+        const texto = `Olá, Meu nome é ${nome} (${email}) e gostaria de falar: ${mensagem}`;
+        const url = `https://wa.me/5527997951112?text=${encodeURIComponent(texto)}`
+  
+        window.open(url, "_blank");
+         });
+</script>
+            
+        </div>
+    </body>
+</html>

@@ -45,14 +45,40 @@ body {
     padding: 15px;
 }
 
+#topbar a {
+    color: black;
+    text-decoration: none
+    
+}
+
+#topbar a:hover{
+    background-color: rgb(72, 218, 72);
+    transition: 0.2s;
+    border-radius: 5px;
+}
+
 #container {
     padding-left: 5%;
     padding-right: 5%;
 }
 
+#container a {
+    color: white
+}
 
+.contato{
+    align-items: center;
+    margin: 10px;
+}
 
+.contato input {
+    width: 75%;
+}
 
+.contato textarea {
+    width: 75%;
+    height: 200px;
+}
 
 
 
