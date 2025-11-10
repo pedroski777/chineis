@@ -11,9 +11,10 @@
                 <img src="img/logo.png" width="75px"> <h2>CHINEIS GAMES</h2>
             </div>
             <hr>
+
+            <p id="accountName" style="text-align: left; position: absolute;">sem conta</p>
       
-            |<a href="index.html">Inicio</a> |
-            <a href="produtos.html">Loja</a> |
+            | <a href="index.html">Loja</a> |
             <a href="contato.html">Suporte</a> |
             <a href="sobre.html">Sobre</a> |
             <a href="login.html">Login</a> |
@@ -24,11 +25,11 @@
                 <div style="display: flex; margin: 20px;">
                     <div id="login-div">
                         <p>Email:</p>
-                        <input type="text">
+                        <input id="email" type="text">
                         <p>Senha:</p>
-                        <input type="password">
+                        <input id="password" type="password">
                          <p>Confirmar Senha:</p>
-                        <input type="password">
+                        <input id="password2" type="password">
                         <br>
                         <br>
                     </div>
@@ -41,14 +42,29 @@
 
                 <div style="display: flex; margin: 20px;">
                     <div id="login-div">
-                        <button>Cadastrar</button>
+                        <button id="login">Cadastrar</button>
                     </div>
                     <div id="login-div">
-                        <button onclick="window.location = 'login.html'">Ir para Login</button>
+                        <button onclick="window.location = './login.html'">Ir para Login</button>
                     </div>
                 </div>
             </div>
 
+            <script>
+                document.getElementById("login").onclick = function() {
+                    if (document.getElementById("email").value != "" &&
+                        document.getElementById("password").value != "" &&
+                        document.getElementById("password2").value == document.getElementById("password").value) {
+                            localStorage.setItem("login", document.getElementById("email").value)
+                            localStorage.setItem("password", document.getElementById("password").value)
+
+                            alert("Conta criada, por favor faça login.")
+                            window.location = "./login.html"
+                    } else {
+                        alert("Por favor preencha os dados.")
+                    }
+                }
+            </script>
         </div>
     </body>
 </html>
@@ -60,3 +76,5 @@
 	
     <P>&copy; Chineis Studio. Todos os direitos reservados</P>
 </div>
+
+<script src="shared.js"></script>

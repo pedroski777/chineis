@@ -22,7 +22,7 @@ body {
     column-gap: 15px;
     margin: 0;
     padding: 3px;
-    background-color: rgb(27, 44, 23);
+    background-color: rgb(53, 77, 17);
 }
 
 .sub {
@@ -32,6 +32,15 @@ body {
 .storegame img {
     max-height: 100px;
     min-height: 100px;
+}
+
+.store-listing {
+    gap: 20px;
+    display: flex;
+}
+
+.store-listing div {
+    width: 100%;
 }
 
 .storegame-title {
@@ -60,6 +69,7 @@ body {
 #container {
     padding-left: 5%;
     padding-right: 5%;
+    height: 100vh;
 }
 
 #container a {

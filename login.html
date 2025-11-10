@@ -11,9 +11,10 @@
                 <img src="img/logo.png" width="75px"> <h2>CHINEIS GAMES</h2>
             </div>
             <hr>
+
+            <p id="accountName" style="text-align: left; position: absolute;">sem conta</p>
       
-            |<a href="index.html">Inicio</a> |
-            <a href="produtos.html">Loja</a> |
+            | <a href="index.html">Loja</a> |
             <a href="contato.html">Suporte</a> |
             <a href="sobre.html">Sobre</a> |
             <a href="login.html">Login</a> |
@@ -24,9 +25,9 @@
                 <div style="display: flex; margin: 20px;">
                     <div id="login-div">
                         <p>Login:</p>
-                        <input type="text">
+                        <input id="login" type="text">
                         <p>Senha:</p>
-                        <input type="password">
+                        <input id="password" type="password">
                         <br>
                         <br>
                     </div>
@@ -38,14 +39,27 @@
 
                 <div style="display: flex; margin: 20px;">
                     <div id="login-div">
-                        <button>Login</button>
+                        <button id="btn">Login</button>
                     </div>
                     <div id="login-div">
-                        <button onclick="window.location = 'cadastro.html'">Ir para Cadastro</button>
+                        <button onclick="window.location = './cadastro.html'">Ir para Cadastro</button>
                     </div>
                 </div>
             </div>
 
+            <script>
+                document.getElementById("btn").onclick = function() {
+                    if (
+                        localStorage.getItem("login") == document.getElementById("login").value &&
+                        localStorage.getItem("password") == document.getElementById("password").value) {
+                            localStorage.setItem("logon",true)
+                            alert("Login feito com successo.")
+                            window.location = "./index.html"
+                    } else {
+                        alert("Senha ou email incorreto.")
+                    }
+                }
+            </script>
         </div>
     </body>
 </html>
@@ -57,3 +71,5 @@
 	
     <P>&copy; Chineis Studio. Todos os direitos reservados</P>
 </div>
+
+<script src="shared.js"></script>
